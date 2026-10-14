@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Screenflex product cube gallery">
+  <title>Screenflex Product Cube Gallery</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="scene">
+    <div id="cube">
+      <div class="face" data-face="top" data-i="0"><span class="face-ph">TOP</span></div>
+      <div class="face" data-face="front" data-i="1"><span class="face-ph">FRONT</span></div>
+      <div class="face" data-face="right" data-i="2"><span class="face-ph">RIGHT</span></div>
+      <div class="face" data-face="back" data-i="3"><span class="face-ph">BACK</span></div>
+      <div class="face" data-face="left" data-i="4"><span class="face-ph">LEFT</span></div>
+      <div class="face" data-face="bottom" data-i="5"><span class="face-ph">BOTTOM</span></div>
+    </div>
+  </div>
+
+  <div id="hud">
+    <div id="hud_pct">000%</div>
+    <div class="progress-bar">
+      <div class="progress-fill" id="prog_fill"></div>
+    </div>
+    <div class="scene-label" id="scene_name">CFSL607-DG</div>
+  </div>
+
+  <button id="theme_toggle" type="button" aria-label="Toggle light/dark mode">
+    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+      <circle cx="12" cy="12" r="4" />
+      <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+    </svg>
+    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" />
+    </svg>
+  </button>
+
+  <div id="scene_strip" aria-label="Product gallery sections"></div>
+
+  <div id="face_caption" aria-hidden="true">
+    <div id="face_caption_num">01</div>
+    <div id="face_caption_name">CFSL607-DG</div>
+  </div>
+
+  <main id="scroll_container">
+    <section id="s0">
+      <div class="text-card">
+        <div class="h-line"></div>
+        <div class="tag">01 — Freestanding Portable Partition</div>
+        <h1 class="product-code">CFSL607-DG</h1>
+        <p class="body-text">Divide large classrooms or auditoriums into smaller, semi-private areas with Screenflex’s Freestanding Portable Partition.</p>
+        <div class="cta-row product-actions">
+          <a class="cta product-link" href="https://www.screenflex.com/search.php?search_query=CFSL607-DG" target="_blank" rel="noopener">
+            Product
+            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 1h8v8M11 1L1 11" /></svg>
+          </a>
+          <a class="cta" href="#s1">
+            Next
+            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M1 6h10M6 1l5 5-5 5" /></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="s1">
+      <div class="text-card right">
+        <div class="h-line"></div>
+        <div class="tag">02 — Officeflex Cubicles make for great workstations.</div>
+        <h2 class="product-code">OFCS</h2>
+        <p class="body-text">Quickly enhance privacy in your workspace with Officeflex Cubicles. The Single configuration creates a dedicated U-shaped workstation with three-sided privacy, supporting individual focus in busy environments.</p>
+        <div class="cta-row product-actions">
+          <a class="cta-back" href="#s0"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M11 6H1M6 11L1 6l5-5" /></svg>Back</a>
+          <a class="cta product-link" href="https://www.screenflex.com/officeflex-cubicles-single/?searchid=7335&amp;search_query=OFCS" target="_blank" rel="noopener">Product<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 1h8v8M11 1L1 11" /></svg></a>
+          <a class="cta" href="#s2">Next<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M1 6h10M6 1l5 5-5 5" /></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="s2">
+      <div class="text-card">
+        <div class="h-line"></div>
+        <div class="tag">03 — Officeflex Cubicles - Corner</div>
+        <h2 class="product-code">OFCC</h2>
+        <p class="body-text">Quickly enhance privacy in your workspace with Officeflex Cubicles. The Corner configuration creates a focused, two-sided L-shaped layout that balances openness with seclusion.</p>
+        <div class="cta-row product-actions">
+          <a class="cta-back" href="#s1"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M11 6H1M6 11L1 6l5-5" /></svg>Back</a>
+          <a class="cta product-link" href="https://www.screenflex.com/officeflex-cubicles-corner/?searchid=7336&amp;search_query=ofcc" target="_blank" rel="noopener">Product<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 1h8v8M11 1L1 11" /></svg></a>
+          <a class="cta" href="#s3">Next<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M1 6h10M6 1l5 5-5 5" /></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="s3">
+      <div class="text-card right">
+        <div class="h-line"></div>
+        <div class="tag">04 — Signature Room Divider - Fabric</div>
+        <h2 class="product-code">FSLF</h2>
+        <p class="body-text">The Signature Room Divider is our most popular solution for creating flexible, refined spaces. Designed for everyday versatility, this portable, freestanding room divider combines durable construction with sound-absorbing performance to bring structure and privacy to open environments.</p>
+        <div class="cta-row product-actions">
+          <a class="cta-back" href="#s2"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M11 6H1M6 11L1 6l5-5" /></svg>Back</a>
+          <a class="cta product-link" href="https://www.screenflex.com/signature-room-divider-fabric/" target="_blank" rel="noopener">Product<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 1h8v8M11 1L1 11" /></svg></a>
+          <a class="cta" href="#s4">Next<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M1 6h10M6 1l5 5-5 5" /></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="s4">
+      <div class="text-card">
+        <div class="h-line"></div>
+        <div class="tag">05 — Heavy Duty Divider - Vinyl</div>
+        <h2 class="product-code">HFSLV</h2>
+        <p class="body-text">The Heavy Duty Divider is engineered for strength and durability in high-traffic and commercial settings. Built to withstand frequent use and movement, this industrial vinyl partition provides reliable space separation in environments where standard partitions may not be sufficient.</p>
+        <div class="cta-row product-actions">
+          <a class="cta-back" href="#s3"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M11 6H1M6 11L1 6l5-5" /></svg>Back</a>
+          <a class="cta product-link" href="https://www.screenflex.com/heavy-duty-room-dividers-vinyl/" target="_blank" rel="noopener">Product<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 1h8v8M11 1L1 11" /></svg></a>
+          <a class="cta" href="#s5">Next<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M1 6h10M6 1l5 5-5 5" /></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="s5">
+      <div class="text-card right">
+        <div class="h-line"></div>
+        <div class="tag">06 — Highpoint® Anchored Divider Sliding - Vinyl</div>
+        <h2 class="product-code">HPTSV</h2>
+        <p class="body-text">The Highpoint® Anchored Divider Sliding is a wall-mounted room partition designed to efficiently divide expansive spaces while maintaining a clean, professional look.</p>
+        <div class="cta-row product-actions">
+          <a class="cta-back" href="#s4"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M11 6H1M6 11L1 6l5-5" /></svg>Back</a>
+          <a class="cta product-link" href="https://www.screenflex.com/highpoint-anchored-sliding-divider-vinyl/" target="_blank" rel="noopener">Product<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 1h8v8M11 1L1 11" /></svg></a>
+          <a class="cta" href="#s6">Next<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M1 6h10M6 1l5 5-5 5" /></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="s6">
+      <div class="text-card">
+        <div class="h-line"></div>
+        <div class="tag">07 — Plexiglass Partition</div>
+        <h2 class="product-code">CRD</h2>
+        <p class="body-text">The Plexiglass Partition provides effective space separation while maintaining full visibility across your environment. Designed for applications where supervision and communication are essential, this transparent room divider allows you to define space without closing it off.</p>
+        <div class="cta-row product-actions">
+          <a class="cta-back" href="#s5"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M11 6H1M6 11L1 6l5-5" /></svg>Back</a>
+          <a class="cta product-link" href="https://www.screenflex.com/clear-room-dividers/" target="_blank" rel="noopener">Product<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 1h8v8M11 1L1 11" /></svg></a>
+          <a class="cta" href="#s7">Next<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M1 6h10M6 1l5 5-5 5" /></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="s7">
+      <div class="text-card right">
+        <div class="h-line"></div>
+        <div class="tag">08 — Highpoint® Anchored Divider Folding - Fabric</div>
+        <h2 class="product-code">HPTFF</h2>
+        <p class="body-text">The Highpoint® Anchored Divider Folding is a wall-mounted room divider designed to efficiently separate expansive spaces with a clean, professional look. Its accordion-style configuration functions as a folding, fabric partition, expanding outward to create defined areas and folding neatly away when not in use.</p>
+        <div class="cta-row product-actions">
+          <a class="cta-back" href="#s6"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M11 6H1M6 11L1 6l5-5" /></svg>Back</a>
+          <a class="cta product-link" href="https://www.screenflex.com/highpoint-anchored-folding-divider-fabric/" target="_blank" rel="noopener">Product<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 1h8v8M11 1L1 11" /></svg></a>
+          <a class="cta" href="#s0">Begin again<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M1 6h10M6 1l5 5-5 5" /></svg></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="credit">
+    <a href="https://www.screenflex.com/" target="_blank" rel="noopener">Screenflex Product Gallery</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
